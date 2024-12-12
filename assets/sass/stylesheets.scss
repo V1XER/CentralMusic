@@ -1,0 +1,268 @@
+@use "./partials/" as *;
+body {
+  font-family: $mainfont;
+}
+#header {
+  background-image: url(/assets/media/unsplash_gioH4gHo0-g.png);
+  background-repeat: no-repeat;
+  background-size: 100vw 808px;
+  padding: 56px;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.4);
+}
+#list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  li {
+    display: inline-flex;
+  }
+}
+.item {
+  padding: 10px;
+}
+.link {
+  font-size: 18px;
+  text-decoration: none;
+  color: $primary-color;
+}
+#heroSection {
+  left: 88px;
+}
+#h1 {
+  padding: 178px 0px;
+  font-size: 56px;
+  font-weight: bold;
+  color: $primary-color;
+  width: 579px;
+  height: 557;
+}
+#main-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/media/Mobile.png);
+  background-size: 100vw 288px;
+  background-repeat: no-repeat;
+  width: 85vw;
+  height: 280px;
+  padding: 32px;
+  border-radius: 15px;
+  margin: -140px auto;
+  box-sizing: border-box;
+  position: relative;
+  box-shadow: 0px 0px 30px 2px rgba(0, 0, 0, 0.2);
+}
+
+#details {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  h2 {
+    text-align: center;
+    font-size: 46px;
+    color: $primary-color;
+  }
+  p {
+    text-align: center;
+    font: 24px;
+    color: $primary-color;
+  }
+}
+#button {
+  background-color: $bc-primary;
+  color: $primary-color;
+  border-radius: 10px;
+  text-align: center;
+  width: 125px;
+  padding: 16px 8px;
+  font-weight: bold;
+  a {
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px $secondary-color;
+    -webkit-text-fill-color: $primary-color;
+  }
+}
+#new-products {
+  margin-top: 136px;
+  position: relative;
+  padding: 88px 88px 0px 88px;
+}
+.title-line {
+  display: block;
+  margin: 8px auto;
+}
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: $title-color;
+  text-align: center;
+  margin-top: 16px;
+}
+.card-row {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.merch-card {
+  margin-top: 30px;
+  display: flexbox;
+  flex-direction: column;
+  padding-top: 6px;
+  align-items: center;
+  width: 400px;
+  height: 417px;
+  flex-wrap: wrap;
+  box-shadow: 0px 12px 12px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: $primary-color;
+  position: relative;
+}
+
+.merch-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 252px;
+  position: relative;
+  background-color: $primary-color;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  img {
+    object-fit: cover;
+    position: absolute;
+    margin: auto;
+  }
+}
+.bg-merch {
+  background-image: url("/assets/media/bg-merch.svg");
+  background-size: cover;
+  img {
+    top: -30px;
+  }
+}
+
+.merch-details {
+  box-sizing: border-box;
+  width: 400px;
+  height: 139px;
+  padding: 16px 24px 24px 24px;
+  position: absolute;
+}
+.merch-i {
+  margin-bottom: 6px;
+  width: 352px;
+  display: inline-block;
+}
+.merch-name {
+  display: inline-block;
+  font-weight: bold;
+  color: $secondary-color;
+  width: 280px;
+}
+.merch-price {
+  display: inline-block;
+  font-weight: bold;
+  color: $secondary-color;
+  margin-bottom: 6px;
+}
+.merch-info {
+  color: $info-color;
+  font-weight: 100;
+  width: 352px;
+  height: 42px;
+  margin-bottom: 6px;
+}
+.stock-supply {
+  width: 70px;
+  text-align: center;
+  padding: 3px;
+  margin-top: 30px;
+  font-size: 12px;
+  border: 0.2px solid $stocks-color;
+  border-radius: 10px;
+  color: $stocks-color;
+  span {
+    font-weight: bold;
+  }
+}
+#popular-products {
+  background-color: $bg-popular-merch;
+  margin-top: 88px;
+  padding: 88px;
+}
+#articles {
+  position: relative;
+  padding: 88px 88px 0px 88px;
+}
+.l-card-dark {
+  color: $primary-color;
+  width: 616px;
+  height: 609px;
+  background-color: $bg-card-dark;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 48px 32px 48px 32px;
+  .article-subhead {
+    color: $info-color-d;
+  }
+}
+.l-card-light {
+  color: $article-dark;
+  width: 616px;
+  height: 609px;
+  background-color: $bg-card-light;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 48px 32px 48px 32px;
+  .article-subhead {
+    color: $info-color;
+  }
+}
+.article-details {
+  padding: 32px;
+}
+.article-title {
+  font-size: 24px;
+  font-weight: bold;
+  width: auto;
+  margin-bottom: 12px;
+}
+.article-subhead {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.m-card-light {
+  color: $article-dark;
+  width: 400px;
+  height: 602px;
+  background-color: $bg-card-light;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 48px 32px 48px 32px;
+  .article-subhead {
+    color: $info-color;
+  }
+}
+.m-card-dark {
+  color: $primary-color;
+  width: 400px;
+  height: 602px;
+  background-color: $bg-card-dark;
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin: 48px 32px 48px 32px;
+  .article-subhead {
+    color: $info-color-d;
+  }
+}
