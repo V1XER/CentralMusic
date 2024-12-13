@@ -27,6 +27,10 @@ body {
   text-decoration: none;
   color: $primary-color;
 }
+.nav-mini{
+  display: none;
+  padding-top: 8.75px;
+}
 #heroSection {
   left: 88px;
 }
@@ -97,6 +101,7 @@ body {
   margin: 8px auto;
 }
 .title {
+  margin-bottom: 40px;
   font-size: 40px;
   font-weight: bold;
   color: $title-color;
@@ -104,12 +109,17 @@ body {
   margin-top: 16px;
 }
 .card-row {
-  margin-top: 20px;
+/*   margin-top: 20px; */
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  .merch-card {
+    &:last-child {
+      display: none;
+    }
+  }
 }
 
 .merch-card {
@@ -211,7 +221,8 @@ body {
   background-color: $bg-card-dark;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 48px 32px 48px 32px;
+  margin-top: 20px;
+  margin-bottom: 48px;
   .article-subhead {
     color: $info-color-d;
   }
@@ -223,7 +234,8 @@ body {
   background-color: $bg-card-light;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 48px 32px 48px 32px;
+  margin-top: 20px;
+  margin-bottom: 48px;
   .article-subhead {
     color: $info-color;
   }
@@ -249,7 +261,8 @@ body {
   background-color: $bg-card-light;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 48px 32px 48px 32px;
+  margin-bottom: 48px;
+  overflow: hidden;
   .article-subhead {
     color: $info-color;
   }
@@ -261,12 +274,14 @@ body {
   background-color: $bg-card-dark;
   box-sizing: border-box;
   border-radius: 20px;
-  margin: 48px 32px 48px 32px;
+  margin-bottom: 48px;  
+  overflow: hidden;
   .article-subhead {
     color: $info-color-d;
   }
 }
 #footer {
+  margin-top: 40px;
   width: 100vw;
   height: 290px;
   background-color: $bg-font-color;
@@ -299,32 +314,32 @@ body {
   color: $primary-color;
   font-size: 14px;
 }
-#logo{
+#logo {
   position: absolute;
   left: 52px;
   top: 115px;
   width: auto;
 }
-#socials-row{
+#socials-row {
   display: inline-flex;
   flex-direction: row-reverse;
   align-items: center;
   position: absolute;
   left: 61px;
   bottom: 54px;
-  a{
+  a {
     margin-right: 12px;
   }
 }
-#cr-bar{
+#cr-bar {
   display: flex;
-  justify-content:flex-end;
-  align-items: center ;
+  justify-content: flex-end;
+  align-items: center;
   background-color: $bg-card-dark;
   height: 34px;
   width: 100vw;
   box-sizing: border-box;
-  p{
+  p {
     direction: ltr;
     font-size: 12.8px;
     margin-left: 52px;
