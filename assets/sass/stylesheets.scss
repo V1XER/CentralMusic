@@ -3,7 +3,7 @@ body {
   font-family: $mainfont;
 }
 #header {
-  background-image: url(/assets/media/unsplash_gioH4gHo0-g.png);
+  background-image: url(/assets/media/bg/bg-homepage.png);
   background-repeat: no-repeat;
   background-size: 100vw 808px;
   padding: 56px;
@@ -18,6 +18,9 @@ body {
   li {
     display: inline-flex;
   }
+  .seprator {
+    margin-right: 230px;
+  }
 }
 .item {
   padding: 10px;
@@ -27,26 +30,27 @@ body {
   text-decoration: none;
   color: $primary-color;
 }
-.nav-mini{
+.nav-mini {
   display: none;
   padding-top: 8.75px;
 }
 #heroSection {
+  overflow-x: hidden;
   left: 88px;
 }
 #h1 {
+  line-height: 80px;
   padding: 178px 0px;
   font-size: 56px;
   font-weight: bold;
   color: $primary-color;
-  width: 579px;
-  height: 557;
+  width: 460px;
 }
 #main-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/assets/media/Mobile.png);
+  background-image: url(/assets/media/bg/lesson-callout.png);
   background-size: 100vw 288px;
   background-repeat: no-repeat;
   width: 85vw;
@@ -67,6 +71,7 @@ body {
   flex-direction: column;
   gap: 30px;
   h2 {
+    line-height: 55px;
     text-align: center;
     font-size: 46px;
     color: $primary-color;
@@ -78,9 +83,10 @@ body {
   }
 }
 #button {
+  box-sizing: border-box;
   background-color: $bc-primary;
   color: $primary-color;
-  border-radius: 10px;
+  border-radius: 32px;
   text-align: center;
   width: 125px;
   padding: 16px 8px;
@@ -109,7 +115,7 @@ body {
   margin-top: 16px;
 }
 .card-row {
-/*   margin-top: 20px; */
+  /*   margin-top: 20px; */
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -274,7 +280,7 @@ body {
   background-color: $bg-card-dark;
   box-sizing: border-box;
   border-radius: 20px;
-  margin-bottom: 48px;  
+  margin-bottom: 48px;
   overflow: hidden;
   .article-subhead {
     color: $info-color-d;

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1025px) and (max-height: 1224px) {
+@media only screen and (max-width: 1025px) {
   .hidden-item {
     display: none !important;
   }
@@ -40,6 +40,150 @@
   }
 }
 
-/* @media only screen and (max-width: 375px) and (max-height: 759px){
-
-} */
+@media only screen and (max-width: 690px) {
+  #header {
+    background-image: url(/assets/media/bg/bg-homepage-mobile.png) !important;
+  }
+  #h1 {
+    width: 320px !important;
+  }
+  #main-card {
+    background-image: url(/assets/media/bg/lesson-callout-mobile.png) !important;
+  }
+  #footer-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 32px;
+  }
+  #list-row {
+    align-items: center !important;
+    justify-content: center !important;
+    position: static !important;
+    width: 141px;
+    .nav-list {
+      text-align: center;
+      &:nth-child(2) {
+        display: none !important;
+      }
+    }
+  }
+  #logo {
+    display: none !important;
+  }
+  #socials-row {
+    position: static !important;
+    margin-left: 10px !important;
+  }
+  #cr-bar {
+    justify-content: center !important;
+    p {
+      margin-left: unset !important;
+    }
+  }
+}
+@media only screen and (max-width: 427px) {
+  #list {
+    li {
+      a {
+        &:first-child {
+          img {
+            width: 153px;
+          }
+        }
+      }
+    }
+  }
+  .nav-mini {
+    padding: 0px !important;
+  }
+  #heroSection {
+    padding-right: 26px;
+  }
+  #h1 {
+    font-size: 32px !important;
+    width: 263px !important;
+    text-align: center;
+  }
+  h2 {
+    font-size: 21px !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #heroSection {
+    padding-right: 0px;
+  }
+  #main-card {
+    height: 168px !important;
+  }
+  #details {
+    height: 168px !important ;
+    box-sizing: border-box;
+    p {
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+  #button {
+    border-radius: 16px;
+    width: 90px !important;
+    padding: 8px !important;
+    a {
+      font-size: 12px;
+      -webkit-text-stroke: 0px !important;
+    }
+  }
+  .merch-card {
+    width: 328px !important;
+  }
+  .merch-preview {
+    width: 328px !important;
+  }
+  .merch-details {
+    width: 328px !important;
+  }
+  .merch-i {
+    width: 280px !important;
+  }
+  .merch-name {
+    width: 200px !important;
+  }
+  .merch-info {
+    width: 280px !important;
+  }
+  #articles {
+    padding: 24px !important;
+  }
+  .l-card-dark {
+    width: 327px !important;
+    height: 433px !important;
+  }
+  .l-card-light {
+    width: 327px !important;
+    height: 433px !important;
+  }
+  .article-row {
+    width: 327px !important;
+  }
+  .article-preview {
+    width: 327px !important;
+    img {
+      width: 327px;
+      height: 311px;
+      object-fit: cover;
+    }
+  }
+  .article-details {
+    width: 327px !important;
+    height: 122px !important;
+  }
+  .m-card-light {
+    width: 327px !important;
+    height: 433px !important;
+  }
+  .m-card-dark {
+    width: 327px !important;
+    height: 433px !important;
+  }
+}
